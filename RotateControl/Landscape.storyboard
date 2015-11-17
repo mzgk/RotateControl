@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bmI-V8-2V9">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--Landscape View Controller-->
+        <scene sceneID="Xox-hD-kC9">
+            <objects>
+                <viewController storyboardIdentifier="LandscapeSB" id="bmI-V8-2V9" customClass="LandscapeViewController" customModule="RotateControl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QKA-SL-qVR"/>
+                        <viewControllerLayoutGuide type="bottom" id="tRc-eW-TTG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KhO-Ry-xja">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Landscape" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSJ-JC-gEA">
+                                <rect key="frame" x="250" y="81" width="168" height="51"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="OFq-dl-Fkg"/>
+                                    <constraint firstAttribute="width" constant="168" id="nsX-cb-Ohl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bJ-dW-R6m">
+                                <rect key="frame" x="295" y="280" width="78" height="50"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="78" id="CPA-VP-Md4"/>
+                                    <constraint firstAttribute="height" constant="50" id="HPv-OJ-B2V"/>
+                                </constraints>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="tappedCloseButton:" destination="bmI-V8-2V9" eventType="touchUpInside" id="8wS-WG-3gj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aSJ-JC-gEA" firstAttribute="top" secondItem="QKA-SL-qVR" secondAttribute="bottom" constant="61" id="NKx-sn-xW1"/>
+                            <constraint firstItem="tRc-eW-TTG" firstAttribute="top" secondItem="6bJ-dW-R6m" secondAttribute="bottom" constant="45" id="P27-9N-f7I"/>
+                            <constraint firstItem="6bJ-dW-R6m" firstAttribute="centerX" secondItem="KhO-Ry-xja" secondAttribute="centerX" id="ngr-Td-o6m"/>
+                            <constraint firstItem="aSJ-JC-gEA" firstAttribute="centerX" secondItem="KhO-Ry-xja" secondAttribute="centerX" id="yeg-cA-SKl"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BoO-ar-rwq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="584.5" y="518.5"/>
+        </scene>
+    </scenes>
+</document>
